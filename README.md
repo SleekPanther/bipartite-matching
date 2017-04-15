@@ -16,6 +16,7 @@ Convert to a Max Flow / Min Cut problem by making a **directed graph**:
 - Graph is represented as an **edge list**
 - `vertexCount` must be an accurate number of nodes in the graph
 - `getStringVertexIdFromArrayIndex` allows conversion between the array indexes used by the actual algorithm & the human-readable names of the vertices. These are sequential with `"S"` and `"T"` being added at the end
+- `S` & `T` are added to the end of the list of vertices with **`S` getting array index `vertexCount`** and **`T` getting array index `vertexCount+1`**
 - `int[] leftHalfVertices` contains the array indexes of the vertices in the left part of the bipartite graph
 - Similarly, `int[] rightHalfVertices` contains the vertices in the right half
 - **These must be *consecitive integers* with the 1st number in `rightHalfVertices` being 1 greater than the last number in `leftHalfVertices`**
@@ -31,8 +32,8 @@ The code uses array indexes instead of nice human-readable Vertex names. Red num
 <img src='images/graph1-renamed-array-indexes.png' width='400'>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src='images/graph2-renamed-array-indexes.png' width='400' >
 
 ### Directed Graphs With Source & Sink Added
-
+<img src='images/graph1-flow-network.png' width='400'>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src='images/graph2-flow-network.png' width='400' >
 
 ### Maximum Matching Solutions
-These are not unique, but these are what the program finds
-<img src='images/graph1-max-matching.png' width='400'>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src='graph2-max-matching.png' width='400' >
+These are not unique, but these are what the program finds  
+<img src='images/graph1-max-matching.png' width='400'>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src='images/graph2-max-matching.png' width='400' >
