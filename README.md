@@ -32,6 +32,7 @@ The code uses array indexes instead of nice human-readable Vertex names. Red num
 <img src='images/graph1-renamed-array-indexes.png' width='400'>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src='images/graph2-renamed-array-indexes.png' width='400' >
 
 ### Directed Graphs With Source & Sink Added
+*All edge capacites are `1` but omitted here for clarity of the picture*  
 <img src='images/graph1-flow-network.png' width='400'>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src='images/graph2-flow-network.png' width='400' >
 
 ### Maximum Matching Solutions
